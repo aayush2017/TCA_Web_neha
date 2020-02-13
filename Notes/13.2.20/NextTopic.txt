@@ -1,0 +1,4 @@
+Search
+Custom tool tip in required
+Pattern
+A
