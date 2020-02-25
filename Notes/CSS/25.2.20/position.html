@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position</title>
+<style>
+.box {
+	width: 25%;
+	padding: 1%;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px 5px #ddd;
+	text-transform: capitalize;
+	background-color: #fff;
+}
+.box img { width: 100%; }
+.box h3 { text-align: center; }
+.box:nth-child(1) { color: red; position: static;top: 11%;left: 6%;}
+.box:nth-child(2) { color: green; position: relative;left: 35%;top: -4%;}
+.box:nth-child(3) { color: blue; position: absolute;top: 5%;right: 5%;}
+.box:nth-child(4) { color: pink; position: sticky;left: 10%;top: 0%;}
+.box:nth-child(5) { color: violet; position: fixed;right: 2%;bottom: 0%;}
+
+
+</style>
+</head>
+<body>
+<div class="box">
+	<img src="images/1.jpg" alt="1" />
+	<h3>Postion: Static</h3>
+</div>
+<div class="box">
+	<img src="images/2.jpg" alt="2" />
+	<h3>Postion: relative</h3>
+</div>
+<div class="box">
+	<img src="images/3.jpg" alt="4" />
+	<h3>Postion: absolute</h3>
+</div>
+<div class="box">
+	<img src="images/5.jpg" alt="5" />
+	<h3>Postion: sticky</h3>
+</div>
+<div class="box">
+	<img src="images/4.jpg" alt="4" />
+	<h3>Postion: fixed</h3>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float Property Example</title>
+<style>
+.divmain {
+	background-color: pink;
+}
+.div {
+	width: 25%;
+	float: left;
+	height: 50px;
+	background-color: red;
+	vertical-align: 1px;
+	line-height: 45px;
+	text-align: center;
+	margin-bottom: 1%;
+}
+.div:first-child {
+	background-color: green;
+}
+.div:nth-child(3) {
+	background-color: gray;
+}
+.div:last-child {
+	background-color: blue;
+	float: right;
+}
+</style>
+</head>
+<body>
+<div class="divmain">
+	<div class="div">Box1</div>
+	<!-- <div>Box2</div>
+	<div>Box3</div> -->
+	<div class="div">Box4</div>
+</div>
+</body>
+</html>

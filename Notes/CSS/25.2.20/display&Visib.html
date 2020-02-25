@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Property Example</title>
+<style>
+div {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	vertical-align: 1px;
+	line-height: 45px;
+	text-align: center;
+	margin-bottom: 1%;
+}
+div:first-child {
+	background-color: green;
+	visibility: hidden;
+}
+div:first-child:hover {
+	visibility: visible;
+}
+div:nth-child(3) {
+	background-color: gray;
+}
+div:last-child {
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+<div class="noactive">
+	<div>Box1</div>
+	<div>Box2</div>
+	<div>Box3</div>
+	<div>Box4</div>
+</div>
+</body>
+</html>
