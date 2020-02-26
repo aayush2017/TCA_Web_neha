@@ -1,0 +1,7 @@
+phone
+plane
+cogs
+truck
+thumbs-o-up
+wrench
+clock-o
