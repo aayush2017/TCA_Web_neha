@@ -1,0 +1,81 @@
+#contact-icon {
+	padding: 1%;
+	height: 50px;
+	width: 100%;
+	clear: both;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+ #contact-icon { background-color: #f44336 !important; }
+}
+/* Mobile 360 */ 
+@media only screen and (min-width: 321px) and (max-width : 360px) {
+#contact-icon { background-color: #9c27b0 !important; }
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 361px) and (max-width : 420px) {
+	#contact-icon { background-color: #673ab7 !important; }
+}
+	
+@media only screen and (min-width: 421px) and (max-width : 480px) {
+ #contact-icon { background-color: #673ab7 !important; }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 481px) and (max-width : 620px){
+#contact-icon { background-color: #2196f3 !important; }
+	.box-img { width: 48% !important; margin-bottom: 5%; }	
+	.ltrm { margin-left: 5% !important; margin-right: 5% !important;  }
+}
+
+	
+
+@media only screen and (min-width: 621px) and (max-width : 768px) {
+ #contact-icon { background-color: #2196f3 !important; }
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 769px) and (max-width : 992px) {
+ #contact-icon { background-color: #009688 !important; }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width : 1024px) {
+#contact-icon { background-color: #0096 !important; }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+#contact-icon { background-color: #0688 !important; }
+}
+/* (1280x1024) SXGA Display */
+@media  screen and (min-width: 1201px) and (max-width: 1280px) {
+   #contact-icon { background-color: #009568 !important; }
+
+}
+/* (1366x768) WXGA Display */
+@media  screen and (min-width: 1281px) and (max-width: 1366px) {
+    /* insert styles here */
+	#contact-icon { background-color: #ff5722 !important; }
+}
+/* (1440x900) WXGA+ Display */
+@media  screen and (min-width: 1367px) and (max-width: 1440px) {
+    /* insert styles here */
+	#contact-icon { background-color: #08f7f3 !important; }
+}
+/* (1600x900) HD+ Display */
+@media  screen and (min-width: 1441px) and (max-width: 1600px) {
+    /* insert styles here */
+	#contact-icon { background-color: #795548 !important; }
+}
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (min-width: 1601px) and (max-width: 1680px) {
+    /* insert styles here */
+	#contact-icon { background-color: #9e9e9e !important; }
+}
+/* (1920x1080) Full HD Display */
+@media  screen and (min-width: 1681px) and (max-width: 1920px) {
+	#contact-icon { background-color: #607d8b !important; }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform translate RT</title>
+	<style>
+	ul.gallary li {
+		float: left;
+		margin: 0 10px;
+		padding: 10px;
+		border: 1px solid #ddd;
+		list-style: none;
+	}
+	ul.gallary li img {
+		float: left;
+		width: 200px;
+		/*-webkit-transition: -webkit-transform 0.2s ease-in-out;*/
+		/*-moz-transition: -moz-transform 0.2s ease-in-out;*/
+		transition: transform 0.2s ease-in-out;
+	}
+	ul.gallary li a:hover img {
+		-webkit-transform: scale(1.5) translate(20px, 40px); /* Right Top */
+		-moz-transform: scale(1.5) translate(20px, 40px); /* Right Top */
+		-o-transform: scale(1.5) translate(20px, 40px); /* Right Top */
+		transform: scale(1.5) translate(20px, 40px); /* Right Top */
+		-webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+		-moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+		-o-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+		box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+	}
+	</style>
+</head>
+<body>
+<ul class="gallary">
+<li><a href=""><img src="img/00kih8g.jpg" align="Error on Path"></a></li>
+<li><a href=""><img src="img/2rT2vdx.jpg" align="Error on Path"></a></li>
+<li><a href=""><img src="img/3yiC6Yq.jpg" align="Error on Path"></a></li>
+<li><a href=""><img src="img/8k3N3EL.jpg" align="Error on Path"></a></li>
+</ul>
+</body>
+</html>

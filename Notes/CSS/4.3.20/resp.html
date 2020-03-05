@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.box-img {
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+	box-shadow: 0px 0px 15px red;
+	padding: 2%;
+	border: 5px solid blue;
+}
+.box-img img {
+	width: 100%;
+	margin-bottom: -4px;
+}
+
+@media only screen and (max-width: 460px) {
+	.box-img { width: 100%;	}	
+	.ltrm { margin-left: 5% !important; margin-right: 5% !important;  }
+}
+
+.ltrm {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+</style>
+</head>
+<body>
+<div class="ltrm">
+	<div class="box-img">
+		<img src="1.jpg" alt="1.jpg" />
+	</div>
+	<div class="box-img">
+		<img src="2.jpg" alt="2.jpg" />
+	</div>
+	<div class="box-img">
+		<img src="3.jpg" alt="3.jpg" />
+	</div>
+</div>
+<div id="contact-icon"></div>
+</body>
+</html>

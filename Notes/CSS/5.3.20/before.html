@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Before Sudo</title>
+<style>
+
+h1 {
+	color: red;
+	position: relative;
+}
+h1::before {
+	content: "";
+	border-bottom: 1px solid red; 
+	width: 10%;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	transition: all .3s;
+}
+h1:hover::before  {
+	content: "";
+	width: 15%;
+}
+h1::after {
+	content: "";
+	border-bottom: 1px solid red; 
+	width: 15%;
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	transition: all .3s;
+}
+h1:hover::after  {
+	content: "";
+	width: 10%;
+}
+
+</style>
+</head>
+<body>
+<h1> John Corter</h1>
+</body>
+</html>
