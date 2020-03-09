@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -webkit-filter: blur(35px); /* Safari 6.0 - 9.0 */
+    filter: blur(35px);
+}
+
+img.circle {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 60%;
+}
+</style>
+</head>
+<body>
+<h1>The filter Property</h1>
+
+<p>Blurred background:</p>
+
+<img class="background" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="circle" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+/*Underline – Top to Bottom */
+.sliding-u-t-b {
+display: inline-block;
+}
+.sliding-u-t-b:after {
+content: '';
+display: block;
+height: 0;
+width: 100%;
+background: transparent;
+transition: height .5s ease, background-color .5s ease;
+}
+.sliding-u-t-b:hover:after {
+height: 3px;
+background: blue;
+}/* BOTTOM TO TOP */
+.sliding-u-b-t {
+	display: inline-block;
+	position: relative;
+}
+.sliding-u-b-t:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	background: transparent;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+.sliding-u-b-t:hover:after {
+	height: 3px;
+	background: blue;
+}
+/*Underline – Left to Right*/
+.sliding-u-l-r {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 3px solid transparent;    
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+.sliding-u-l-r:hover {
+    border-bottom: 3px solid blue;
+    width: 200px;
+}
+/**/
+.sliding-u-r-l {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+ 
+.sliding-u-r-l:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+ 
+.sliding-u-r-l:hover:after {
+    width: 100%;
+    background: blue;
+}
+/*Underline – Middle Out*/
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: blue;
+}
+/*Underline – Slide In, Slide Off*/
+.sliding-u-l-r-l {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-u-l-r-l:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.sliding-u-l-r-l:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: blue;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:before {
+    width: 100%;
+    background: blue;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+/*Underline — Slide In, Slide Off (Inverse)*/
+.sliding-u-l-r-l-inverse {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-u-l-r-l-inverse:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    transition: width 0s ease;
+}
+.sliding-u-l-r-l-inverse:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l-inverse:hover:before {
+    width: 0%;
+    background: blue;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l-inverse:hover:after {
+    width: 0%;
+    background: transparent;
+    transition: width 0s ease;
+}

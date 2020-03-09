@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide</title>
+<style type="text/css">
+
+#icon {
+
+}
+#side-menu {
+
+	background: black;
+	width: 15%;
+	position: absolute;
+	top: 10%;
+	left: -15%;
+	height: 100%;
+	transition: all .3s;
+}
+#side-menu a {
+
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 4% 5%;
+	background: red;
+	transition: all .3s;
+}
+#side-menu a:hover {
+	background-color: green;
+}
+#chk {
+
+	display: none;
+}
+#chk:checked ~ #side-menu {
+	left: 0%;
+}
+
+</style>
+</head>
+<body>
+<div id="icon"><label for="chk">Mobile</label></div>
+
+<input type="checkbox" name="" id="chk">
+<div id="side-menu">
+	<a href="">Home</a>
+	<a href="">About</a>
+</div>
+</body>
+</html>
