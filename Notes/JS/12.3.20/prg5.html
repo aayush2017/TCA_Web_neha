@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prg5 - Style</title>
+</head>
+<body>
+<label>Fullname <input type="text" name="" id="fnm"></label>
+<p>Error Message: <span id="errMess"></span></p>
+<button id="btn1" onclick="abc()">Okay</button>
+
+<script>
+function abc() {
+	var fnm = document.getElementById('fnm');
+	var errMess = document.getElementById('errMess');
+
+	if(fnm.value == "") {
+		fnm.style = "background-color: red; color: #fff;";
+		errMess.innerHTML = "Please enter any value for Fullname";
+	}
+}
+</script>
+</body>
+</html>

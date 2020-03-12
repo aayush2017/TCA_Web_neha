@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prg5 - Style</title>
+</head>
+<body>
+<label>Fullname <input type="text" name="" id="fnm" onkeyup="checkValid()"></label>
+<p><span id="errMessFullname"></span></p>
+<label>Username <input type="text" name="" id="unm" onkeyup="checkValid2()"></label>
+<p><span id="errMessUsername"></span></p>
+
+
+<button id="btn1" onclick="abc()">Submit</button>
+
+<script>
+function checkValid() {
+	var fnm = document.getElementById('fnm');
+	var errMessFullname = document.getElementById('errMessFullname');
+
+	if(fnm.value == "") {
+		fnm.style = "background-color: red; color: #fff;";
+		errMessFullname.style = "color: red;";
+		errMessFullname.innerHTML = "Please enter any value for Fullname";
+	} else {
+		fnm.style = "background-color: green; color: #fff;";
+		errMessFullname.innerHTML = "";
+	}
+}
+function checkValid2() {
+	var unm = document.getElementById('unm');
+	var errMessUsername = document.getElementById('errMessUsername');
+
+	if(unm.value == "") {
+		unm.style = "background-color: red; color: #fff;";
+		errMessUsername.style = "color: red;";
+		errMessUsername.innerHTML = "Please enter any value for Username";
+	} else {
+		unm.style = "background-color: green; color: #fff;";
+		errMessUsername.innerHTML = "";
+	}
+}
+function abc() {
+	var fnm = document.getElementById('fnm');
+	var unm = document.getElementById('unm');
+	var errMessFullname = document.getElementById('errMessFullname');
+	var errMessUsername = document.getElementById('errMessUsername');
+
+	if(fnm.value == "") {
+		fnm.style = "background-color: red; color: #fff;";
+		errMessFullname.style = "color: red;";
+		errMessFullname.innerHTML = "Please enter any value for Fullname";
+	} else {
+		fnm.style = "background-color: green; color: #fff;";
+		errMessFullname.innerHTML = "";
+	}
+	if(unm.value == "") {
+		unm.style = "background-color: red; color: #fff;";
+		errMessUsername.style = "color: red;";
+		errMessUsername.innerHTML = "Please enter any value for Username";
+	} else {
+		unm.style = "background-color: green; color: #fff;";
+		errMessUsername.innerHTML = "";
+	}
+}
+</script>
+</body>
+</html>

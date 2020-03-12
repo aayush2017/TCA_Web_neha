@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program 2</title>
+</head>
+<body>
+<label>A <input type="text" id="a"></label>
+<label>B <input type="text" id="b"></label>
+<button onclick="addPlus()">Plus</button>
+
+<script>
+function addPlus() {
+ var a = document.getElementById('a');
+ var b = document.getElementById('b');
+ var c;
+ c = parseInt(a.value) + parseInt(b.value);
+ alert(c);
+}
+</script>
+</body>
+</html>

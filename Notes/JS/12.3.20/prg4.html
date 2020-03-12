@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prg4 - Style</title>
+</head>
+<body>
+<label>Fullname <input type="text" name="" id="fnm"></label>
+<button id="btn1" onclick="abc()">Okay</button>
+
+<script>
+function abc() {
+	var fnm = document.getElementById('fnm');
+	if(fnm.value == "") {
+		fnm.style = "background-color: red;";
+		alert("Please enter any value for Fullname");
+		// fnm.value = "Please enter any value for Fullname";
+	}
+}
+</script>
+</body>
+</html>

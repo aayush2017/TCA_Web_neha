@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prg7 - Style</title>
+</head>
+<body>
+<label>Fullname <input type="text" name="" id="fnm" onkeyup="checkValid('fnm', 'errMessFullname')"></label>
+<p><span id="errMessFullname"></span></p>
+<label>Username <input type="text" name="" id="unm" onkeyup="checkValid(this.id, 'errMessUsername')"></label>
+<p><span id="errMessUsername"></span></p>
+
+
+<button id="btn1" onclick="abc()">Submit</button>
+
+<script>
+function checkValid(IID, IEID) {
+	var objI = document.getElementById(IID);
+	var errMessObj = document.getElementById(IEID);
+
+	if(objI.value == "") {
+		objI.style = "background-color: red; color: #fff;";
+		errMessObj.style = "color: red;";
+		errMessObj.innerHTML = "Please enter any value for Fullname";
+	} else {
+		objI.style = "background-color: green; color: #fff;";
+		errMessObj.innerHTML = "";
+	}
+}
+function abc() {
+	var fnm = document.getElementById('fnm');
+	var unm = document.getElementById('unm');
+	var errMessFullname = document.getElementById('errMessFullname');
+	var errMessUsername = document.getElementById('errMessUsername');
+
+	if(fnm.value == "") {
+		fnm.style = "background-color: red; color: #fff;";
+		errMessFullname.style = "color: red;";
+		errMessFullname.innerHTML = "Please enter any value for Fullname";
+	} else {
+		fnm.style = "background-color: green; color: #fff;";
+		errMessFullname.innerHTML = "";
+	}
+	if(unm.value == "") {
+		unm.style = "background-color: red; color: #fff;";
+		errMessUsername.style = "color: red;";
+		errMessUsername.innerHTML = "Please enter any value for Username";
+	} else {
+		unm.style = "background-color: green; color: #fff;";
+		errMessUsername.innerHTML = "";
+	}
+}
+</script>
+</body>
+</html>
