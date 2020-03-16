@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider in JS</title>
+	<link rel="stylesheet" type="text/css" href="animated.css">
+	<meta charset="utf-8">
+<style>
+.slider {
+	width: 33%;
+	border: 1px solid red;
+	overflow: hidden;
+}
+.box-slider {
+
+}
+.box-slider img {
+	width: 100%;
+}
+.animated {
+	animation-duration: 2s;
+}
+</style>
+</head>
+<body>
+<div class="slider">
+	<div class="box-slider fadeIn animated2">
+		<img src="img/4.jpg" alt="4" />
+	</div>
+	<div class="box-slider  fadeIn animated2">
+		<img src="img/5.jpg" alt="5" />
+	</div>
+	<div class="box-slider  fadeIn animated">
+		<img src="img/6.jpg" alt="6" />
+	</div>
+	<div class="box-slider">
+		<img src="img/1.jpg" alt="1" />
+	</div>
+</div>
+<button onclick="moveSlider(imgNum -= 1)">Prev</button>
+<button onclick="moveSlider(imgNum =0)">1</button>
+<button onclick="moveSlider(imgNum =1)">2</button>
+<button onclick="moveSlider(imgNum =2)">3</button>
+<button onclick="moveSlider(imgNum =3)">3</button>
+<button onclick="moveSlider(imgNum += 1)">Next</button>
+
+<script>
+	var imgNum;
+	imgNum = 0;
+	moveSlider(imgNum);
+
+	setInterval(function() {
+		moveSlider(imgNum += 1);
+	}, 1000);
+	
+	function moveSlider(imgNum2) {
+		var boxSlider = document.getElementsByClassName('box-slider');
+		for(var i=0; i<boxSlider.length; i++) {
+			boxSlider[i].style = "display: none";
+		}
+		if (imgNum2 < 0 ) { imgNum = boxSlider.length-1; imgNum2 = boxSlider.length-1; }
+		if (imgNum2 >= boxSlider.length ) { imgNum = 0; imgNum2 = 0; }
+
+		boxSlider[imgNum2].style = "display: block";
+		// alert(imgNum);
+	}
+</script>
+</body>
+</html>

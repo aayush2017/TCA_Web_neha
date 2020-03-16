@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interval</title>
+</head>
+<body>
+<button onclick="myFunction()">Start</button>
+<button onclick="myFunction2()">Stop</button>
+<script>
+	function myFunction() {
+	  myVar =  setInterval(alertFunc, 3000);
+	}
+	function myFunction2() {
+	  clearInterval(myVar);
+	}
+	function alertFunc() {
+	  alert("Hello World!");
+	}
+</script>
+</body>
+</html>

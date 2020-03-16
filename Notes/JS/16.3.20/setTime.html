@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SetTimeOut</title>
+</head>
+<body>
+<button onclick="myFunction()">Start</button>
+<button onclick="myFunction2()">Stop</button>
+<script>
+	function myFunction() {
+	  myVar = setTimeout(alertFunc, 3000);
+	}
+	function myFunction2() {
+	  clearTimeout(myVar);
+	}
+	function alertFunc() {
+	  alert("Game Over");
+	}
+</script>
+</body>
+</html>

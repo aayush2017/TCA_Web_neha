@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute in JS</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<img src="img/1.jpg" alt="1" id="img1">
+<button onclick="abc()">Change</button>
+<script>
+function abc() {
+	var img1 = document.getElementById('img1');
+	// alert(img1.id);
+	if (img1.src.match("1.jpg")) {
+		img1.src = "img/2.jpg";
+	} else {
+		img1.src = "img/1.jpg";
+	}
+}
+</script>
+</body>
+</html>
